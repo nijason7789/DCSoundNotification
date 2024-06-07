@@ -1,0 +1,21 @@
+{
+  "name": "jx3-helper",
+  "main": "src/index.mjs",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "node ."
+  },
+  "dependencies": {
+    "@discordjs/rest": "^2.2.0",
+    "chalk": "^4.1.2",
+    "discord-api-types": "^0.37.67",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "author": "Casval Ni",
+  "license": "MIT"
+}

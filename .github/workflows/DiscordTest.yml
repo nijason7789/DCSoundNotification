@@ -1,0 +1,27 @@
+name: Discord
+on:
+  pull_request:
+
+  workflow_dispatch:
+
+jobs:
+  pr-pipline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      
+      - name: create .env file
+        run: |
+          cat <<EOL > .env
+          token=${{ secrets.DISCORD_TOKEN }}
+          clientID=${{ secrets.CLIENT_ID }}
+          guildID=${{ secrets.GUILD_ID }}
+          EOL
+
+      - name: install dependencies
+        uses: ./.github/actions/npm-install
+
+      - name: build env
+        shell: bash
+        run: npm run test
