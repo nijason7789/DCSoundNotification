@@ -17,6 +17,7 @@ jobs:
           token=${{ secrets.DISCORD_TOKEN }}
           clientID=${{ secrets.CLIENT_ID }}
           guildID=${{ secrets.GUILD_ID }}
+          channelID=${{secrets.CHANNEL_ID}}
           EOL
       
       - name: install ffmpeg
