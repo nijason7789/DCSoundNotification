@@ -1,12 +1,14 @@
 {
   "name": "jx3-helper",
   "main": "src/index.mjs",
+  "type": "module",
   "version": "0.0.1",
   "scripts": {
     "test": "node ."
   },
   "dependencies": {
     "@discordjs/rest": "^2.2.0",
+    "@discordjs/voice": "^0.17.0",
     "chalk": "^4.1.2",
     "discord-api-types": "^0.37.67",
     "discord.js": "^14.14.1",
